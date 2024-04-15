@@ -1,96 +1,114 @@
-Paper [![Paper Build Status](https://img.shields.io/github/actions/workflow/status/PaperMC/Paper/build.yml?branch=master)](https://github.com/PaperMC/Paper/actions)
-[![Discord](https://img.shields.io/discord/289587909051416579.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/papermc)
-[![GitHub Sponsors](https://img.shields.io/github/sponsors/papermc?label=GitHub%20Sponsors)](https://github.com/sponsors/PaperMC)
-[![Open Collective](https://img.shields.io/opencollective/all/papermc?label=OpenCollective%20Sponsors)](https://opencollective.com/papermc)
-===========
-
-The most widely used, high-performance Minecraft server that aims to fix gameplay and mechanics inconsistencies.
-
-
-**Support and Project Discussion:**
-- [Our forums](https://forums.papermc.io/) or [Discord](https://discord.gg/papermc)
-
-How To (Server Admins)
-------
-Paperclip is a jar file that you can download and run just like a normal jar file.
-
-Download Paper from our [downloads page](https://papermc.io/downloads/paper).
-
-Run the Paperclip jar directly from your server. Just like old times
-
-* Documentation on using Paper: [docs.papermc.io](https://docs.papermc.io)
-* For a sneak peek at upcoming features, [see here](https://github.com/PaperMC/Paper/projects)
-
-How To (Plugin Developers)
-------
-* See our API patches [here](patches/api)
-* See upcoming, pending, and recently added API [here](https://github.com/orgs/PaperMC/projects/2/views/4)
-* Paper API javadocs here: [papermc.io/javadocs](https://papermc.io/javadocs/)
-#### Repository (for paper-api)
-##### Maven
-
-```xml
-<repository>
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">纸</font></font><a href="https://github.com/PaperMC/Paper/actions"><img src="https://camo.githubusercontent.com/9107728c84217336857aba633e0d8f1095ec85f66ae76e4132ad5596a19ef123/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f616374696f6e732f776f726b666c6f772f7374617475732f50617065724d432f50617065722f6275696c642e796d6c3f6272616e63683d6d6173746572" alt="论文构建状态" data-canonical-src="https://img.shields.io/github/actions/workflow/status/PaperMC/Paper/build.yml?branch=master" style="max-width: 100%;"></a>
+<a href="https://discord.gg/papermc" rel="nofollow"><img src="https://camo.githubusercontent.com/91219c4628c15b09293c251a0e8860e1af0e67d0ec667ccf3d5f3bf0d3625968/68747470733a2f2f696d672e736869656c64732e696f2f646973636f72642f3238393538373930393035313431363537392e7376673f6c6162656c3d266c6f676f3d646973636f7264266c6f676f436f6c6f723d66666666666626636f6c6f723d373338394438266c6162656c436f6c6f723d364137454332" alt="不和谐" data-canonical-src="https://img.shields.io/discord/289587909051416579.svg?label=&amp;logo=discord&amp;logoColor=ffffff&amp;color=7389D8&amp;labelColor=6A7EC2" style="max-width: 100%;"></a>
+<a href="https://github.com/sponsors/PaperMC"><img src="https://camo.githubusercontent.com/06a29effa1111804fd636476be17749c4873634e6196eb0c27fa179d3bb9eec1/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73706f6e736f72732f70617065726d633f6c6162656c3d47697448756225323053706f6e736f7273" alt="GitHub 赞助商" data-canonical-src="https://img.shields.io/github/sponsors/papermc?label=GitHub%20Sponsors" style="max-width: 100%;"></a>
+<a href="https://opencollective.com/papermc" rel="nofollow"><img src="https://camo.githubusercontent.com/455dec1cf6c7e77fc4b8ffccba64f140630ade46dedb159f03366ddcb7621865/68747470733a2f2f696d672e736869656c64732e696f2f6f70656e636f6c6c6563746976652f616c6c2f70617065726d633f6c6162656c3d4f70656e436f6c6c65637469766525323053706f6e736f7273" alt="开放集体" data-canonical-src="https://img.shields.io/opencollective/all/papermc?label=OpenCollective%20Sponsors" style="max-width: 100%;"></a></h1><a id="user-content-paper-" class="anchor" aria-label="永久链接：纸" href="#paper-"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用最广泛的高性能 Minecraft 服务器，旨在修复游戏玩法和机制的不一致问题。</font></font></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持和项目讨论：</font></font></strong></p>
+<ul dir="auto">
+<li><a href="https://forums.papermc.io/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们的论坛</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或</font></font><a href="https://discord.gg/papermc" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Discord</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何（服务器管理员）</font></font></h2><a id="user-content-how-to-server-admins" class="anchor" aria-label="永久链接：如何（服务器管理员）" href="#how-to-server-admins"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Paperclip 是一个 jar 文件，您可以像普通 jar 文件一样下载和运行它。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://papermc.io/downloads/paper" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从我们的下载页面</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载论文</font><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">直接从服务器运行 Paperclip jar。就像旧时光一样</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Paper 的文档：</font></font><a href="https://docs.papermc.io" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">docs.papermc.io</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要抢先了解即将推出的功能，</font></font><a href="https://github.com/PaperMC/Paper/projects"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请参阅此处</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何（插件开发人员）</font></font></h2><a id="user-content-how-to-plugin-developers" class="anchor" aria-label="永久链接：如何（插件开发人员）" href="#how-to-plugin-developers"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><a href="/PaperMC/Paper/blob/master/patches/api"><font style="vertical-align: inherit;">请在此处</font></a><font style="vertical-align: inherit;">查看我们的 API 补丁</font></font><a href="/PaperMC/Paper/blob/master/patches/api"><font style="vertical-align: inherit;"></font></a></li>
+<li><font style="vertical-align: inherit;"><a href="https://github.com/orgs/PaperMC/projects/2/views/4"><font style="vertical-align: inherit;">在此处</font></a><font style="vertical-align: inherit;">查看即将推出、待定和最近添加的 API</font></font><a href="https://github.com/orgs/PaperMC/projects/2/views/4"><font style="vertical-align: inherit;"></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Paper API javadocs 位于：</font></font><a href="https://papermc.io/javadocs/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">papermc.io/javadocs</font></font></a></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h4 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">存储库（用于 paper-api）</font></font></h4><a id="user-content-repository-for-paper-api" class="anchor" aria-label="永久链接：存储库（用于 paper-api）" href="#repository-for-paper-api"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h5 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">梅文</font></font></h5><a id="user-content-maven" class="anchor" aria-label="永久链接：Maven" href="#maven"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="highlight highlight-text-xml notranslate position-relative overflow-auto" dir="auto"><pre>&lt;<span class="pl-ent">repository</span>&gt;
+    &lt;<span class="pl-ent">id</span>&gt;papermc&lt;/<span class="pl-ent">id</span>&gt;
+    &lt;<span class="pl-ent">url</span>&gt;https://repo.papermc.io/repository/maven-public/&lt;/<span class="pl-ent">url</span>&gt;
+&lt;/<span class="pl-ent">repository</span>&gt;</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="<repository>
     <id>papermc</id>
     <url>https://repo.papermc.io/repository/maven-public/</url>
-</repository>
-```
-
-```xml
-<dependency>
+</repository>" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<div class="highlight highlight-text-xml notranslate position-relative overflow-auto" dir="auto"><pre>&lt;<span class="pl-ent">dependency</span>&gt;
+    &lt;<span class="pl-ent">groupId</span>&gt;io.papermc.paper&lt;/<span class="pl-ent">groupId</span>&gt;
+    &lt;<span class="pl-ent">artifactId</span>&gt;paper-api&lt;/<span class="pl-ent">artifactId</span>&gt;
+    &lt;<span class="pl-ent">version</span>&gt;1.20.4-R0.1-SNAPSHOT&lt;/<span class="pl-ent">version</span>&gt;
+    &lt;<span class="pl-ent">scope</span>&gt;provided&lt;/<span class="pl-ent">scope</span>&gt;
+&lt;/<span class="pl-ent">dependency</span>&gt;</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="<dependency>
     <groupId>io.papermc.paper</groupId>
     <artifactId>paper-api</artifactId>
     <version>1.20.4-R0.1-SNAPSHOT</version>
     <scope>provided</scope>
-</dependency>
-```
-##### Gradle
-```kotlin
-repositories {
+</dependency>" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<div class="markdown-heading" dir="auto"><h5 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">摇篮</font></font></h5><a id="user-content-gradle" class="anchor" aria-label="永久链接：Gradle" href="#gradle"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="highlight highlight-source-kotlin notranslate position-relative overflow-auto" dir="auto"><pre>repositories {
     maven {
-        url = uri("https://repo.papermc.io/repository/maven-public/")
+        url <span class="pl-k">=</span> uri(<span class="pl-s"><span class="pl-pds">"</span>https://repo.papermc.io/repository/maven-public/<span class="pl-pds">"</span></span>)
     }
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.20.4-R0.1-SNAPSHOT")
+    compileOnly(<span class="pl-s"><span class="pl-pds">"</span>io.papermc.paper:paper-api:1.20.4-R0.1-SNAPSHOT<span class="pl-pds">"</span></span>)
+}
+
+java {
+    toolchain.languageVersion.set(<span class="pl-en">JavaLanguageVersion</span>.of(<span class="pl-c1">17</span>))
+}</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="repositories {
+    maven {
+        url = uri(&quot;https://repo.papermc.io/repository/maven-public/&quot;)
+    }
+}
+
+dependencies {
+    compileOnly(&quot;io.papermc.paper:paper-api:1.20.4-R0.1-SNAPSHOT&quot;)
 }
 
 java {
     toolchain.languageVersion.set(JavaLanguageVersion.of(17))
-}
-```
-
-How To (Compiling Jar From Source)
-------
-To compile Paper, you need JDK 17 and an internet connection.
-
-Clone this repo, run `./gradlew applyPatches`, then `./gradlew createReobfBundlerJar` from your terminal. You can find the compiled jar in the project root's `build/libs` directory.
-
-To get a full list of tasks, run `./gradlew tasks`.
-
-How To (Pull Request)
-------
-See [Contributing](CONTRIBUTING.md)
-
-Support Us
-------
-First of all, thank you for considering helping out, we really appreciate that!
-
-PaperMC has various recurring expenses, mostly related to infrastructure. Paper uses [Open Collective](https://opencollective.com/) via the [Open Source Collective fiscal host](https://opencollective.com/opensource) to manage expenses. Open Collective allows us to be extremely transparent, so you can always see how your donations are used. You can read more about financially supporting PaperMC [on our website](https://papermc.io/sponsors).
-
-You can find our collective [here](https://opencollective.com/papermc), or you can donate via GitHub Sponsors [here](https://github.com/sponsors/PaperMC), which will also go towards the collective.
-
-Special Thanks To:
--------------
-
-[![YourKit-Logo](https://www.yourkit.com/images/yklogo.png)](https://www.yourkit.com/)
-
-[YourKit](https://www.yourkit.com/), makers of the outstanding java profiler, support open source projects of all kinds with their full featured [Java](https://www.yourkit.com/java/profiler) and [.NET](https://www.yourkit.com/.net/profiler) application profilers. We thank them for granting Paper an OSS license so that we can make our software the best it can be.
-
-[<img src="https://user-images.githubusercontent.com/21148213/121807008-8ffc6700-cc52-11eb-96a7-2f6f260f8fda.png" alt="" width="150">](https://www.jetbrains.com)
-
-[JetBrains](https://www.jetbrains.com/), creators of the IntelliJ IDEA, supports Paper with one of their [Open Source Licenses](https://www.jetbrains.com/opensource/). IntelliJ IDEA is the recommended IDE for working with Paper, and most of the Paper team uses it.
-
-All our sponsors!  
-[![Sponsor Image](https://raw.githubusercontent.com/PaperMC/papermc.io/data/sponsors.png)](https://papermc.io/sponsors)
+}" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何（从源代码编译 Jar）</font></font></h2><a id="user-content-how-to-compiling-jar-from-source" class="anchor" aria-label="永久链接：如何（从源代码编译 Jar）" href="#how-to-compiling-jar-from-source"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要编译 Paper，您需要 JDK 17 和互联网连接。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">克隆此存储库，运行</font></font><code>./gradlew applyPatches</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，然后</font></font><code>./gradlew createReobfBundlerJar</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从您的终端运行。您可以在项目根</font></font><code>build/libs</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录中找到编译后的 jar。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要获取完整的任务列表，请运行</font></font><code>./gradlew tasks</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何操作（拉取请求）</font></font></h2><a id="user-content-how-to-pull-request" class="anchor" aria-label="永久链接：如何（拉取请求）" href="#how-to-pull-request"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请参阅</font></font><a href="/PaperMC/Paper/blob/master/CONTRIBUTING.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献</font></font></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持我们</font></font></h2><a id="user-content-support-us" class="anchor" aria-label="永久链接：支持我们" href="#support-us"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">首先，感谢您考虑提供帮助，我们真的很感激！</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PaperMC 有各种经常性开支，大部分与基础设施有关。 Paper</font><font style="vertical-align: inherit;">通过</font><a href="https://opencollective.com/opensource" rel="nofollow"><font style="vertical-align: inherit;">Open Source Collective 财务主机使用</font></a></font><a href="https://opencollective.com/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Open Collective</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">来管理费用。 Open Collective 使我们变得极其透明，因此您始终可以看到您的捐款的使用情况。您可以</font><a href="https://papermc.io/sponsors" rel="nofollow"><font style="vertical-align: inherit;">在我们的网站上</font></a><font style="vertical-align: inherit;">阅读有关为 PaperMC 提供财务支持的更多信息。</font></font><a href="https://opencollective.com/opensource" rel="nofollow"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font><a href="https://papermc.io/sponsors" rel="nofollow"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://opencollective.com/papermc" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以在这里</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">找到我们的集体，或者您可以通过</font></font><a href="https://github.com/sponsors/PaperMC"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此处的</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub Sponsors 进行捐赠</font><font style="vertical-align: inherit;">，这些捐款也将捐献给该集体。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">特别感谢：</font></font></h2><a id="user-content-special-thanks-to" class="anchor" aria-label="永久链接： 特别感谢：" href="#special-thanks-to"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a href="https://www.yourkit.com/" rel="nofollow"><img src="https://camo.githubusercontent.com/2b1fd3407c9b019211acd8990647e37624d48818b6b39e33fe7f5fd46d573970/68747470733a2f2f7777772e796f75726b69742e636f6d2f696d616765732f796b6c6f676f2e706e67" alt="YourKit-标志" data-canonical-src="https://www.yourkit.com/images/yklogo.png" style="max-width: 100%;"></a></p>
+<p dir="auto"><a href="https://www.yourkit.com/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">YourKit是出色的 Java 分析器的制造商，通过其全功能的</font></font></a><font style="vertical-align: inherit;"></font><a href="https://www.yourkit.com/java/profiler" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Java</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><a href="https://www.yourkit.com/.net/profiler" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.NET</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">应用程序分析器支持各种开源项目</font><font style="vertical-align: inherit;">。我们感谢他们向 Paper 授予 OSS 许可证，以便我们能够使我们的软件达到最佳状态。</font></font></p>
+<p dir="auto"><a href="https://www.jetbrains.com" rel="nofollow"><img src="https://user-images.githubusercontent.com/21148213/121807008-8ffc6700-cc52-11eb-96a7-2f6f260f8fda.png" alt="" width="150" style="max-width: 100%;"></a></p>
+<p dir="auto"><a href="https://www.jetbrains.com/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">JetBrains是 IntelliJ IDEA 的创建者，通过其</font></font></a><font style="vertical-align: inherit;"></font><a href="https://www.jetbrains.com/opensource/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开源许可证</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">之一支持 Paper </font><font style="vertical-align: inherit;">。 IntelliJ IDEA 是推荐使用 Paper 的 IDE，大多数 Paper 团队都使用它。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们所有的赞助商！</font></font><br>
+<a href="https://papermc.io/sponsors" rel="nofollow"><img src="https://raw.githubusercontent.com/PaperMC/papermc.io/data/sponsors.png" alt="赞助商形象" style="max-width: 100%;"></a></p>
+</article></div>
